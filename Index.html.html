@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RandomBrand</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <p>Find A New Clothing Brand!</p>
+        <h3>Go To A Random Brand's Website...</h3>
+       
+        <button onclick="goToRandomWebsite()"><b>Search!</b></button>
+    </div>
+    
+
+   
+    <script>
+        
+        function goToRandomWebsite() {
+            
+            var websites = [
+                "https://unjustjewelry.com/",
+                "https://www.aelfriceden.com/",
+                "https://www.zara.com",
+                "https://www.thesupermade.com/",
+                "https://www.uniqlo.com",
+                "https://www.freemanseattle.com/",
+                "https://marketstudios.com/",
+                "https://shopcanoeclub.com/",
+                "https://howlinknitwear.com/",
+                "https://shop.colbo.nyc/",
+                "https://kizokicks.com/",
+                "https://happy99.online/",
+                "https://www.ilthy.com/",
+                "https://oluolin.com/",
+                "https://stupidstupidstudio.com/",
+                
+
+
+
+
+            ];
+            
+            
+            var randomIndex = Math.floor(Math.random() * websites.length);
+            
+           
+            window.location.href = websites[randomIndex];
+        }
+    </script>
+</body>
+
+<footer> For Business Inquiries : Crispyskips@gmail.com</footer>
+</html>
